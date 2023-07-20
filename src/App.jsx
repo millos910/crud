@@ -1,15 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useState } from 'react'
 import './App.css'
-
+import useFetch from './hooks/useFetch'
 function App() {
-  const [count, setCount] = useState(0)
+  const baseUrl='https://users-crud.academlo.tech/'
+  const [users,getAllUsers,createNewUsers,delteUserByid]=useFetch(baseUrl)
+  useEffect(()=>{
+    getAllUsers('/users')
+  },[])
+  console.log(users);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   return (
-    <h1>
-      users crud
-    </h1>
+    <>
+      <h1>users crud</h1>
+    </>
   )
 }
 
