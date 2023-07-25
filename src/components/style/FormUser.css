@@ -1,6 +1,7 @@
 .form-container{
     width: 100%;
     min-width: 100vh;
+    height: 100vh;
     position: fixed;
     background-color: #0004;
     backdrop-filter: blur(2px);
@@ -9,6 +10,7 @@
     justify-content: center;
     align-items: center;
     transition: transform 200ms ease;
+    position: absolute;
 }
 .form{
     background-color: white;
@@ -37,6 +39,7 @@
     right: 2em;
     cursor: pointer;
     font-weight: 300;
+    color: red;
 }
 .form__x:hover{
     transform: scale(1.3);

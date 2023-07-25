@@ -38,7 +38,7 @@ const FormUsers = ({createNewUsers,UpdateInfo,UpdateInfoByid,setUpdateInfo,setis
   return (
     <form className='form' onSubmit={handleSubmit(submit)}>
       <h2 className='form__title'>form Users</h2>
-      <div onClick={handleExit} className='form__x'>X</div>
+      <div onClick={handleExit} className='form__x'><i class='bx bx-x'></i></div>
       <div className='form__section'>
         <label className='form__label' htmlFor="firstName">First name  </label>
         <input className='form__input' {...register('first_name')} id='firstName' type="text" />
