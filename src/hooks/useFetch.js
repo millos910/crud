@@ -19,7 +19,6 @@ const useFetch=(baseUrl)=>{
             })
             .catch(err=>console.log(err))
     }
-
     //delete
     const deleteRegister=(path,id)=>{
             const url=`${baseUrl}${path}/${id}/`
