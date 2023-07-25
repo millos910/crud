@@ -4,10 +4,11 @@ import '../src/components/style/FormUser.css'
 import useFetch from './hooks/useFetch'
 import FormUsers from './components/FormUsers'
 import UsersCard from './components/UsersCard'
+import { URL_API } from '../url'
 function App() {
   const [isCloseForm,setisCloseForm]=useState(true)
   const [UpdateInfo,setUpdateInfo]=useState()
-  const baseUrl='https://users-crud.academlo.tech/'
+  const baseUrl=URL_API.url
   const [users,getAllUsers,createNewUsers,delteUserByid,UpdateInfoByid]=useFetch(baseUrl)
   useEffect(()=>{
     getAllUsers('/users')
